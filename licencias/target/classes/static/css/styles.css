@@ -1,0 +1,235 @@
+.head-background {
+    -fx-background-color: linear-gradient(to left, #F4D03F, #D4AC0D);
+}
+
+.text-input {
+    -fx-background-radius: 20;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+
+}
+
+.title {
+    color: #ffffff;
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+}
+
+.itemList {
+    -fx-border-color: #000000;
+}
+
+.itemList:pressed {
+    -fx-border-color: #2D75E8;
+}
+
+.itemList::selection {
+    -fx-border-color: #2D75E8;
+}
+
+
+.labelFont {
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+}
+
+.bodyPane {
+    -fx-background-color: #ffffff;
+}
+
+.DatePicker {
+    -fx-background-color: #ffffff;
+
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+
+
+}
+
+.backButton {
+    -fx-background-image: url("../icons/backIcon.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 30 30;
+}
+
+.backButton:hover {
+    -fx-background-image: url("../icons/backIconHover.png");
+}
+
+.refreshButton {
+    -fx-image: url("../icons/refreshIcon.png");
+}
+
+.refreshButton:hover {
+    -fx-image: url("../icons/refreshIconHover.png");
+}
+
+.nextPageButton {
+    -fx-image: url("../icons/arrowRightIcon.png");
+}
+
+.nextPageButton:hover {
+    -fx-image: url("../icons/arrowRightHoverIcon.png");
+}
+
+.FormerPageButton {
+    -fx-image: url("../icons/arrowLeftIcon.png");
+}
+
+.FormerPageButton:hover {
+    -fx-image: url("../icons/arrowLeftHoverIcon.png");
+}
+
+.searchButton {
+    -fx-background-image: url("../icons/searchIcon.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 28 28;
+}
+
+.searchButton:hover {
+    -fx-background-image: url("../icons/searchIconHover.png");
+}
+
+.button1 {
+    -fx-background-color: #431FA0;
+    -fx-text-fill: #ffffff;
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+
+}
+
+.button1:hover {
+    -fx-text-fill: #6F4CBB;
+}
+
+.button1:pressed {
+    -fx-text-fill: #371897;
+}
+
+.button2 {
+
+    -fx-text-fill: #000000;
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+    -fx-background-radius: 30;
+
+}
+
+.button2:hover {
+    -fx-text-fill: #1e3888;
+}
+
+.button2:pressed {
+    -fx-text-fill: #371897;
+}
+
+.trash {
+    -fx-background-image: url("../icons/trashItem.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 28 28;
+
+}
+
+.trash:hover {
+    -fx-background-image: url("../icons/trashItemHover.png");
+}
+
+
+.combo-box {
+
+    -fx-background-color: transparent;
+    -fx-border-color: #515658;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+    text-align: center;
+}
+
+.combo-box:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: #515658;
+    -fx-border-radius: 30;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+}
+
+.combo-box:pressed {
+    -fx-background-color: transparent;
+    -fx-border-color: #515658;
+    -fx-border-radius: 30;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+}
+
+.table-view {
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size: 20;
+    -fx-background-color: #2D75E8;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-veight: bold;
+    -fx-alignment: center-left;
+
+}
+
+.table-view .cell {
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #000000;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgb(127, 172, 243);
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/* SCROLL BAR*/
+.table-view .increment-button,
+.table-view .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#2D75E8, 80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#2D75E8, 90%);
+    -fx-background-radius: 2em;
+    -fx-background-insets: 2, 0, 0;
+}
+
+.check {
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+}

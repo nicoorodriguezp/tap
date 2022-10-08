@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://kesavan.db.elephantsql.com:5432/vhzzwjvs"/>
+        <property name="username" value="vhzzwjvs"/>
+        <property name="password" value="2mdMH4KfGYQn26ksVXIdtKdbAPD02Nye"/>
+    </bean>
+</beans>
