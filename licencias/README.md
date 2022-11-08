@@ -43,56 +43,56 @@ Aquí se encuentran todos los archivos estáticos dentro del sistema, como imág
 
 <h3> Login </h3>
 
-![Login](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/login.png)
+![Login](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/login.png)
 
 <h3> Create User </h3>
 
-![Create-User](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/create_user.png)
+![Create-User](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/create_user.png)
 
 <h3> Home </h3>
 
-![Home](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/home.png)
+![Home](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/home.png)
 
 <h3> User Licences </h3>
 
-![User-Licences](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/user_licences.png)
+![User-Licences](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/user_licences.png)
 
 <h3> Create Appointment </h3>
 
-![Create-Appointment](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/appointment.png)
+![Create-Appointment](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/appointment.png)
 
 <h3> User Appointments </h3>
 
-![User-Appointments](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/user_appointments.png)
+![User-Appointments](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/user_appointments.png)
 
 <h3> Licences in Process </h3>
 
-![Licences-in-Process](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/licences_in_process.png)
+![Licences-in-Process](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/licences_in_process.png)
 
 <h3> Updating Licence </h3>
 
-![Updating-Licence](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/updating_licence.png)
+![Updating-Licence](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/updating_licence.png)
 
 <h3> Licence Update </h3>
 
-![Licence-Update](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/licence_update.png)
+![Licence-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/licence_update.png)
 
 <h3> User List </h3>
 
-![User-List](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/user_list.png)
+![User-List](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/user_list.png)
 
 <h3> Create User Admin </h3>
 
-![Create-User-Admin](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/create_user_admin.png)
+![Create-User-Admin](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/create_user_admin.png)
 
 <h3> Headquarters List </h3>
 
-![Headquarters-List](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/headquarters_list.png)
+![Headquarters-List](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/headquarters_list.png)
 
 <h3> Headquarters Update </h3>
 
-![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/update_headquater.png)
+![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/update_headquater.png)
 
 <h3> Integration Test </h3>
 
-![Integration-Test](https://github.com/nicoorodriguezp/tap/blob/main/src/main/resources/static/images/examples/test.png)
+![Integration-Test](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/test.png)
