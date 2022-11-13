@@ -95,7 +95,7 @@ Aquí se encuentran todos los archivos estáticos dentro del sistema, como imág
 
 <h3> Report - csv </h3>
 
-![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/statics.png)
+![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/report.png)
 
 
 <h3> Statics </h3>
