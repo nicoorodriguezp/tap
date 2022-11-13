@@ -73,9 +73,11 @@ public class StaticsController extends Controller implements Initializable {
 
         ArrayList<PieChart.Data> dataPie = new ArrayList<>();
         for(int i=0; i<places.size(); i++){
-            dataPie.add(new PieChart.Data(placesStatic.get(i).getPlace().getAddress(), placesStatic.get(i).getAmount()));
+            if(!places.get(i).getId().equals(IsNotEmployeePlace)){
+                dataPie.add(new PieChart.Data(placesStatic.get(i).getPlace().getAddress(), placesStatic.get(i).getAmount()));
+            }
         }
-        for(int i=0; i<places.size(); i++){
+        for(int i=0; i<dataPie.size(); i++){
             System.out.println(dataPie.get(i));
         }
 

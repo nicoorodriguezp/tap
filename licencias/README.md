@@ -93,6 +93,16 @@ Aquí se encuentran todos los archivos estáticos dentro del sistema, como imág
 
 ![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/update_headquater.png)
 
+<h3> Report - csv </h3>
+
+![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/statics.png)
+
+
+<h3> Statics </h3>
+
+![Headquarters-Update](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/statics.png)
+
+
 <h3> Integration Test </h3>
 
 ![Integration-Test](https://github.com/nicoorodriguezp/tap/blob/main/licencias/src/main/resources/static/images/examples/test.png)
