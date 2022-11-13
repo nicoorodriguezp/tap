@@ -53,5 +53,15 @@ public class AdminService extends EmployeeService implements AdminDAO {
         return licenceRepository.getLicencesStateDatesBetween(startDate, endDate, licenceState);
     }
 
+    @Override
+    public ArrayList<Appointment> getAllAppointments() {
+        return (ArrayList<Appointment>) appointmentRepository.findAll();
+    }
+
+    @Override
+    public ArrayList<Licence> getAllLicences() {
+        return (ArrayList<Licence>) licenceRepository.findAll();
+    }
+
 
 }

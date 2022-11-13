@@ -230,6 +230,20 @@ public class MainController {
 
     }
 
+    protected void showStatics(Scene scene){
+        getFXML("Statics");
+
+        StaticsController controller = this.fxmlLoader.<StaticsController>getController();
+        controller.init(this, ac.getAllAppointments(), uc.getPlaces(), uc.getLicenceStates(), ac.getAllLicences());
+
+        scene.setRoot(parent);
+        this.stage.setScene(scene);
+        this.stage.setTitle("Generar Reporte");
+
+        this.stage.show();
+
+    }
+
 
     /**
      * @param alertDesc : Contenido de la alerta. Mensaje a mostrar.

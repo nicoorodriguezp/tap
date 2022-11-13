@@ -18,7 +18,7 @@
       <Button fx:id="generateButton" layoutX="184.0" layoutY="439.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="211.0" styleClass="button1" stylesheets="@../static/css/styles.css" text="Obtener Licencias" />
       <ImageView fx:id="dateIcon" fitHeight="45.0" fitWidth="41.0" layoutX="129.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../static/icons/dateIcon.png" />
+            <Image url="@../static/icons/dateBlue.png" />
          </image>
       </ImageView>
       <DatePicker fx:id="datePicker" layoutX="181.0" layoutY="309.0" prefHeight="32.0" prefWidth="217.0" promptText="Seleccionar fecha inicial" style="-fx-background-radius: 1-;" styleClass="DatePicker" />
@@ -65,6 +65,12 @@
             </ImageView>
          </children>
       </Pane>
+      <Button layoutX="184.0" layoutY="621.0" mnemonicParsing="false" onAction="#showStatics" prefHeight="32.0" prefWidth="211.0" styleClass="button1" stylesheets="@../static/css/styles.css" text="Ver Estadisticas" />
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="254.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/icons/bar-100.png" />
+         </image>
+      </ImageView>
    </children>
    <stylesheets>
       <URL value="@../static/css/styles.css" />

@@ -15,6 +15,7 @@ import com.tap.licencias.controller.AdminController;
 import com.tap.licencias.entity.Licence;
 import com.tap.licencias.entity.LicenceState;
 import javafx.beans.property.SimpleObjectProperty;
+import javafx.scene.Scene;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -67,8 +68,6 @@ public class ReportGeneratorController extends Controller implements Initializab
     private TableColumn<Licence, String> lastNameColumn;
     @FXML
     private TableColumn<Licence, Integer> idDriverColumn;
-    @FXML
-    private TableColumn<Licence, String> sedeColumn;
     @FXML
     private TableColumn<Licence, Date> updateDateColumn;
     @FXML
@@ -232,6 +231,15 @@ public class ReportGeneratorController extends Controller implements Initializab
                     "La tabla no tiene contenido. Por favor seleccione una fecha que tenga tramites de licencias asociados.", 1);
         }
 
+    }
+
+    @FXML
+    private void showStatics(ActionEvent event) {
+
+        Scene scene;
+        this.backButton = (Button) event.getSource();
+        scene = backButton.getScene();
+        this.m.showStatics(scene);
     }
 
 }

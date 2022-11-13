@@ -48,5 +48,15 @@ public class AdminController implements AdminDAO {
         return adminService.getLicencesStateDatesBetween(startDate,endDate,licenceState);
     }
 
+    @Override
+    public ArrayList<Appointment> getAllAppointments() {
+        return adminService.getAllAppointments();
+    }
+
+    @Override
+    public ArrayList<Licence> getAllLicences() {
+        return adminService.getAllLicences();
+    }
+
 
 }

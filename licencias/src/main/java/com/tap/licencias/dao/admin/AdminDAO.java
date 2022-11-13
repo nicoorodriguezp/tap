@@ -21,4 +21,8 @@ public interface AdminDAO {
     public void createLicenceState(LicenceState licenceState);
 
     public ArrayList<Licence> getLicencesStateDatesBetween(Date startDate, Date endDate, LicenceState licenceState);
+
+    ArrayList<Appointment> getAllAppointments();
+
+    ArrayList<Licence> getAllLicences();
 }

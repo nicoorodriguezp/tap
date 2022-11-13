@@ -35,6 +35,12 @@
     -fx-font-style: Regular;
 }
 
+.chartFont {
+    -fx-font: Arial;
+    -fx-font-family: Arial;
+    -fx-font-style: Regular;
+}
+
 .bodyPane {
     -fx-background-color: #ffffff;
 }
