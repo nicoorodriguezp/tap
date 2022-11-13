@@ -54,13 +54,14 @@
             </ImageView>
             <Pane fx:id="adminPane" layoutX="-2.0" layoutY="493.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="1263.0">
                <children>
-                  <Button layoutX="344.0" layoutY="104.0" mnemonicParsing="false" onAction="#showEmployeesPanel" prefHeight="58.0" prefWidth="295.0" styleClass="button1" text="Lista de Usuarios" />
+                  <Button layoutX="178.0" layoutY="108.0" mnemonicParsing="false" onAction="#showEmployeesPanel" prefHeight="58.0" prefWidth="295.0" styleClass="button1" text="Lista de Usuarios" />
                   <Label layoutX="491.0" layoutY="25.0" styleClass="labelFont" text="Nivel Administrativo">
                      <font>
                         <Font size="32.0" />
                      </font>
                   </Label>
-                  <Button layoutX="678.0" layoutY="104.0" mnemonicParsing="false" onAction="#showPlacesPanel" prefHeight="58.0" prefWidth="295.0" styleClass="button1" text="Lista de Sedes" />
+                  <Button layoutX="496.0" layoutY="108.0" mnemonicParsing="false" onAction="#showPlacesPanel" prefHeight="58.0" prefWidth="295.0" styleClass="button1" text="Lista de Sedes" />
+                  <Button layoutX="814.0" layoutY="107.0" mnemonicParsing="false" onAction="#showReport" prefHeight="58.0" prefWidth="295.0" styleClass="button1" text="Generar Reporte" />
                </children>
             </Pane>
             <Pane fx:id="employeePane" layoutX="14.0" layoutY="245.0" prefHeight="261.0" prefWidth="1241.0">
@@ -78,7 +79,7 @@
                   <Image url="@../static/icons/identity-licence-black.png" />
                </image>
             </ImageView>
-            <Button layoutX="797.0" layoutY="157.0" mnemonicParsing="false" onAction="#showAppointmentListPanel" prefHeight="58.0" prefWidth="289.0" styleClass="button1" text="Ver Turnos">
+            <Button layoutX="801.0" layoutY="157.0" mnemonicParsing="false" onAction="#showAppointmentListPanel" prefHeight="58.0" prefWidth="289.0" styleClass="button1" text="Ver Turnos">
                <font>
                   <Font name="Arial" size="13.0" />
                </font>

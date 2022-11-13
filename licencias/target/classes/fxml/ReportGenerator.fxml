@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="830.0" prefWidth="1263.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.ReportGeneratorController">
+   <children>
+      <Button fx:id="generateButton" layoutX="184.0" layoutY="439.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="211.0" styleClass="button1" stylesheets="@../static/css/styles.css" text="Obtener Licencias" />
+      <ImageView fx:id="dateIcon" fitHeight="45.0" fitWidth="41.0" layoutX="129.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/icons/dateIcon.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="datePicker" layoutX="181.0" layoutY="309.0" prefHeight="32.0" prefWidth="217.0" promptText="Seleccionar fecha inicial" style="-fx-background-radius: 1-;" styleClass="DatePicker" />
+      <DatePicker fx:id="datePickerEnd" layoutX="181.0" layoutY="346.0" prefHeight="32.0" prefWidth="217.0" promptText="Seleccionar fecha limite" style="-fx-background-radius: 1-;" styleClass="DatePicker" />
+      <ComboBox fx:id="estadosCB" layoutX="181.0" layoutY="393.0" prefHeight="33.0" prefWidth="217.0" promptText="Estado de Licencia" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" styleClass="labelFont" />
+      <TableView fx:id="reportTable" layoutX="583.0" layoutY="103.0" prefHeight="579.0" prefWidth="635.0">
+        <columns>
+          <TableColumn fx:id="idLicenciaColumn" prefWidth="85.0" text="Licencia_ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="131.0" text="Nombre Conductor" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="131.0" text="Apellido Conductor" />
+            <TableColumn fx:id="idDriverColumn" prefWidth="84.0" text="Driver_ID" />
+            <TableColumn fx:id="stateColumn" prefWidth="102.0" text="Estado" />
+            <TableColumn fx:id="updateDateColumn" prefWidth="102.0" text="Actualizacion" />
+        </columns>
+      </TableView>
+      <Button fx:id="generateExcel" layoutX="795.0" layoutY="698.0" mnemonicParsing="false" onAction="#generateExcel" prefHeight="32.0" prefWidth="211.0" styleClass="button1" stylesheets="@../static/css/styles.css" text="Generar Excel" />
+      <Label alignment="CENTER" layoutX="91.0" layoutY="226.0" prefHeight="41.0" prefWidth="397.0" styleClass="labelFont" text="Generador de Reportes" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="69.0" fitWidth="63.0" layoutX="258.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/icons/reportIcon.png" />
+         </image>
+      </ImageView>
+      <Pane id="menuPane" prefHeight="58.0" prefWidth="1264.0" styleClass="head-background" stylesheets="@../static/css/styles.css">
+         <children>
+            <Button id="backButton" fx:id="backButton" layoutX="49.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="30.0" styleClass="backButton" wrapText="true" />
+            <Label id="title" layoutX="509.0" layoutY="14.0" prefHeight="30.0" prefWidth="247.0" styleClass="title" stylesheets="@../static/css/styles.css" text="Sistema de Licencias">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="userNameLabel" layoutX="1091.0" layoutY="19.0" prefHeight="18.0" prefWidth="147.0" styleClass="labelFont" text="Nicolas Rodriguez">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView id="iconUser" fitHeight="30.0" fitWidth="32.0" layoutX="1053.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../static/icons/userIcon2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../static/css/styles.css" />
+      <URL value="@../static/css/styles.css" />
+   </stylesheets>
+</AnchorPane>

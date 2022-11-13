@@ -124,5 +124,13 @@ public class HomeController extends Controller implements Initializable {
         this.m.showAppointmentsList(scene);
 
     }
+
+    @FXML
+    private void showReport(ActionEvent event) {
+
+        this.button = (Button) event.getSource();
+        this.scene = button.getScene();
+        this.m.showReportGenerator(scene);
+    }
     
 }

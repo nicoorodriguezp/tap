@@ -4,6 +4,7 @@ import com.tap.licencias.dao.admin.AdminDAO;
 import com.tap.licencias.entity.*;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 
@@ -44,6 +45,11 @@ public class AdminServiceTest extends EmployeeServiceTest implements AdminDAO {
     @Override
     public void createLicenceState(LicenceState licenceState) {licenceStateRepository.save(licenceState); }
 
+    @Override
+    public ArrayList<Licence> getLicencesStateDatesBetween(Date startDate, Date endDate, LicenceState licenceState) {
+        return licenceRepository.getLicencesStateDatesBetween(startDate,endDate,licenceState);
+    }
+
     public Place getPlaceByAdress(String address) {
         return placeRepository.findByAddress(address);
     }
@@ -66,4 +72,7 @@ public class AdminServiceTest extends EmployeeServiceTest implements AdminDAO {
         System.out.println("\n\n >>>>>>>>>>>>>>>>>>>>>>>> Successful Deleting Test Records - COMPLETE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< \n\n");
 
     }
+
+
+
 }

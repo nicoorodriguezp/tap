@@ -1,10 +1,12 @@
 package com.tap.licencias.repository;
 
 import com.tap.licencias.entity.Licence;
+import com.tap.licencias.entity.LicenceState;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 @Repository
@@ -25,5 +27,6 @@ public interface LicenceRepository extends JpaRepository<Licence, Integer> {
     @Query(value = "SELECT l FROM Licence l WHERE l.user.id = ?1 and (l.state.id = ?2 or l.state.id = ?3 or l.state.id = ?4 or l.state.id = ?5)")
     public Licence getLicenceInProcess(Integer idUser, Integer InitialState, Integer AwaitingPrintingState, Integer ReadyState, Integer ToBeWithdrawn);
 
-
+    @Query(value = "SELECT l FROM Licence l WHERE (l.lastUpdate between ?1 and ?2 ) and (l.state = ?3)")
+    ArrayList<Licence> getLicencesStateDatesBetween(Date startDate, Date endDate, LicenceState licenceState);
 }

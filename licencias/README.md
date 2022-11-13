@@ -15,9 +15,9 @@ Teniendo en cuenta esto, el sistema debe permitir al usuario regular visualizar 
 
 A la hora de solicitar un turno, el sistema debe permitir al usuario elegir la fecha en la cual quiere solicitar el turno. Al momento de registrar el turno, el sistema debe verificar que haya cupos disponibles en ese día, horario y sede elegido previamente.
 
-En caso de que un horario no tenga más cupos en un lugar específico, el sistema debe emitir un mensaje informativo al usuario indicando que no hay espacio disponible en la sede teniendo en cuenta el día y el horario seleccionado.
-
 Además, el sistema debe validar si el usuario está en un trámite de licencia actualmente, ya que si es así, no debe permitir al usuario solicitar más turnos hasta que el último trámite se haya marcado como “Listo” lo cual significa que la licencia ha sido impresa o, que haya sido marcada como “Denegada” significando así que la licencia no ha sido aprobada por un empleado.
+
+El sistema debe contar con una herramienta que permita visualizar estadisticas de los tramites de licencias y exportarlos como un archivo csv con el objetivo de que luego pueda usarse como dataset a la hora de realizar analisis de datos.
 
 
 # Contenido del Repositorio

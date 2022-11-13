@@ -1,11 +1,10 @@
 package com.tap.licencias.dao.admin;
 
-import com.tap.licencias.entity.LicenceState;
-import com.tap.licencias.entity.Place;
-import com.tap.licencias.entity.Position;
-import com.tap.licencias.entity.User;
+import com.tap.licencias.entity.*;
 
+import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public interface AdminDAO {
 
@@ -21,4 +20,5 @@ public interface AdminDAO {
 
     public void createLicenceState(LicenceState licenceState);
 
+    public ArrayList<Licence> getLicencesStateDatesBetween(Date startDate, Date endDate, LicenceState licenceState);
 }

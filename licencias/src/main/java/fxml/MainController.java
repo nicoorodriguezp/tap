@@ -8,7 +8,6 @@ import com.tap.licencias.controller.EmployeeController;
 import com.tap.licencias.controller.UserController;
 import com.tap.licencias.entity.Licence;
 import com.tap.licencias.entity.Place;
-import com.tap.licencias.exception.DAOException;
 import com.tap.licencias.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -211,6 +210,23 @@ public class MainController {
         this.stage.setScene(new Scene(parent, 1263, 830));
         this.stage.setTitle("Home Panel - " + user.toString());
         this.stage.show();
+
+    }
+
+
+    protected void showReportGenerator(Scene scene){
+
+        getFXML("ReportGenerator");
+
+        ReportGeneratorController controller = this.fxmlLoader.<ReportGeneratorController>getController();
+        controller.init(this, uc.getLicenceStates(), ac);
+
+        scene.setRoot(parent);
+        this.stage.setScene(scene);
+        this.stage.setTitle("Generar Reporte");
+
+        this.stage.show();
+
 
     }
 

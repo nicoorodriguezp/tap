@@ -1,15 +1,13 @@
 package com.tap.licencias.service.admin;
 
 import com.tap.licencias.dao.admin.AdminDAO;
-import com.tap.licencias.entity.LicenceState;
-import com.tap.licencias.entity.Place;
-import com.tap.licencias.entity.Position;
-import com.tap.licencias.entity.User;
+import com.tap.licencias.entity.*;
 import com.tap.licencias.repository.PlaceRepository;
 import com.tap.licencias.service.employee.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 
@@ -49,5 +47,11 @@ public class AdminService extends EmployeeService implements AdminDAO {
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>> Licence State <<<<<<<<<<<<<<<<<<<<<<<
     @Override
     public void createLicenceState(LicenceState licenceState) {licenceStateRepository.save(licenceState); }
+
+    @Override
+    public ArrayList<Licence> getLicencesStateDatesBetween(Date startDate, Date endDate, LicenceState licenceState) {
+        return licenceRepository.getLicencesStateDatesBetween(startDate, endDate, licenceState);
+    }
+
 
 }

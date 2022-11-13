@@ -1,15 +1,13 @@
 package com.tap.licencias.controller;
 
 import com.tap.licencias.dao.admin.AdminDAO;
-import com.tap.licencias.entity.LicenceState;
-import com.tap.licencias.entity.Place;
-import com.tap.licencias.entity.Position;
-import com.tap.licencias.entity.User;
+import com.tap.licencias.entity.*;
 import com.tap.licencias.service.admin.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 @Controller
@@ -44,6 +42,11 @@ public class AdminController implements AdminDAO {
 
     @Override
     public void createLicenceState(LicenceState licenceState) {adminService.createLicenceState(licenceState);}
+
+    @Override
+    public ArrayList<Licence> getLicencesStateDatesBetween(Date startDate, Date endDate, LicenceState licenceState) {
+        return adminService.getLicencesStateDatesBetween(startDate,endDate,licenceState);
+    }
 
 
 }
