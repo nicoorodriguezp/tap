@@ -1,4 +1,4 @@
-# PO-Avanzados
+# Técnicas Avanzadas de Programación
 Proyecto Integrador desarrollado por Nicolas Gaston Rodriguez Perez, referente a la materia "Técnicas Avanzadas de Programación" de la Universidad de Palermo.
 
 En el repositorio se encuentran todos los archivos y librerías utilizadas para realizar el proyecto.
